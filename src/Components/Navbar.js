@@ -60,7 +60,6 @@ const Navbar = ({ cart, setCart }) => {
         <a href="/contact">Contact</a>
 
           <Link to="/cart">
-                      {/* < BsCart2 className="navbar-cart-icon" />{cart.length} */}
 <div style={{ position: "relative", display: "inline-block" }}>
   <div
     style={{
@@ -96,7 +95,8 @@ const Navbar = ({ cart, setCart }) => {
 </div>
 
           </Link>
-        <button className="primary-button">Bookings Now</button>
+
+        <button className="primary-button"><a href="/Menu">Bookings Now</a></button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
